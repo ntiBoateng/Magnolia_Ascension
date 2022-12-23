@@ -1,0 +1,34 @@
+label: Footer
+form:
+  properties:
+    - name: title
+      label: Title
+      $type: textField
+      i18n: true
+
+
+areas:
+  footer1:
+    title: Footer 1
+    availableComponents:
+      Logo:
+        id: 'resources:components/LogoImage/LogoImage'
+      Text:
+        id: 'resources:components/Text/Text'
+      SocialMedia:
+        id: 'resources:components/SocialMedia/SocialMedia'
+  footer2:
+    title: Footer 2
+    availableComponents:
+      Logo:
+        id: 'resources:components/Logo/Logo'
+  footer3:
+    title: Footer (Menu Item)
+    availableComponents:
+      MenuItem:
+        id: 'resources:components/MenuItem/MenuItem'
+  footer4:
+    title: Footer (Quick Links)
+    availableComponents:
+      Logo:
+        id: 'resources:components/ExternalLink/ExternalLink'

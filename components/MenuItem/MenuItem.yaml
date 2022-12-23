@@ -1,0 +1,13 @@
+label: MenuItem
+form:
+  properties:
+    - name: title
+      label: Title
+      $type: textField
+      i18n: true
+    - name: pageLinks
+      label: Choose corresponding page
+      $type: pageLinkField
+      showOptions: true
+      textInputAllowed: true
+      converterClass: info.magnolia.ui.editor.converter.JcrNodeToPathConverter

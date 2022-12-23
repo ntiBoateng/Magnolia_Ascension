@@ -1,0 +1,19 @@
+label: SocialMedia
+form:
+  properties:
+    - name: fb
+      label: Facebook Link
+      $type: textField
+      i18n: true
+    - name: ig
+      label: Instagram Link
+      $type: textField
+      i18n: true
+    - name: tw
+      label: Twitter Link
+      $type: textField
+      i18n: true
+    - name: yt
+      label: Youtube Link
+      $type: textField
+      i18n: true

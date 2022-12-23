@@ -1,0 +1,54 @@
+class: info.magnolia.rest.delivery.jcr.v2.JcrDeliveryEndpointDefinition
+workspace: contact
+depth: 10
+bypassWorkspaceAcls: true
+systemProperties:
+  - mgnl:lastModified
+  - mgnl:created
+  - mgnl:template
+references:
+  - name: assetReference
+    propertyName: images
+    referenceResolver:
+      class: info.magnolia.rest.reference.dam.AssetReferenceResolverDefinition
+      assetRenditions:
+        - large
+        - medium
+        - small
+  - name: pageReference
+    propertyName: pageLinks
+    referenceResolver:
+      class: info.magnolia.rest.reference.jcr.JcrReferenceResolverDefinition
+      targetWorkspace: website
+  - name: assetReference
+    propertyName: image
+    referenceResolver:
+      class: info.magnolia.rest.reference.dam.AssetReferenceResolverDefinition
+      assetRenditions:
+        - large
+        - medium
+        - small
+  - name: assetReference
+    propertyName: image1
+    referenceResolver:
+      class: info.magnolia.rest.reference.dam.AssetReferenceResolverDefinition
+      assetRenditions:
+        - large
+        - medium
+        - small
+  - name: assetReference
+    propertyName: image2
+    referenceResolver:
+      class: info.magnolia.rest.reference.dam.AssetReferenceResolverDefinition
+      assetRenditions:
+        - large
+        - medium
+        - small
+  - name: assetReference
+    propertyName: image3
+    referenceResolver:
+      class: info.magnolia.rest.reference.dam.AssetReferenceResolverDefinition
+      assetRenditions:
+        - large
+        - medium
+        - small

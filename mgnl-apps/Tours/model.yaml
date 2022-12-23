@@ -1,0 +1,47 @@
+model:
+  nodeType: mgnl:content
+  properties:
+    - name: title
+      label: Title
+    - name: images
+      type: asset
+      label: Images
+      multiple: true
+    - name: text
+      label: "Text"
+      multiple: true
+    - name: exampleDropdown
+      label: Example Demo Dropdown
+      options:
+        - name: zoomin
+          value: zoomin
+        - name: cinematic
+          value: cinematic
+    - name: contact
+      type: contactData
+      label: Contacts
+  subModels:
+    - name: contactData
+      label: Contact Data
+      nodeType: mgnl:contentNode
+      properties:
+        - name: email
+          label: E-Mail
+        - name: phoneNumber
+          label: Phone-Number
+        - name: addresses
+          type: address
+          label: Address
+          multiple: true
+    - name: address
+      label: Address
+      nodeType: mgnl:contentNode
+      properties:
+        - name: street
+          label: Street
+        - name: city
+          label: City
+        - name: postalCode
+          label: Postal Code
+        - name: country
+          label: Country

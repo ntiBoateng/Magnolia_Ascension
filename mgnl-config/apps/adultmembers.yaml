@@ -1,0 +1,7 @@
+!content-type:AdultMembers
+name: adultmembers
+icon: icon-content-app
+label: AdultMembers
+subApps:
+    detail:
+        label: AdultMembers

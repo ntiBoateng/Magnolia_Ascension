@@ -1,0 +1,31 @@
+label: Home
+form:
+  properties:
+    - name: title
+      label: Title
+      $type: textField
+      i18n: true
+areas:
+  navigation:
+    title: Navigation Area
+    availableComponents:
+      Navigation:
+        id: 'resources:components/Navigation/Navigation'
+      Logo:
+        id: 'resources:components/Logo/Logo'
+  main:
+    title: Home Main Area
+    availableComponents: 
+      TourList:
+        id: 'resources:components/TourList/TourList'
+      Carousel:
+        id: 'resources:components/Carousel/Carousel'
+      ContactList:
+        id: 'resources:components/ContactList/ContactList'
+
+  footer:
+    title: Footer Area
+    type: list
+    availableComponents:
+      Footer:
+        id: 'resources:components/Footer/Footer'

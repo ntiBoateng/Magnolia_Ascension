@@ -1,0 +1,18 @@
+label: Standard Page (resources)
+
+form:
+  properties:
+    - name: title
+      label: Title
+      $type: textField
+      i18n: true
+areas:
+  main:
+    title: Standard Page Main Area
+    availableComponents:
+      ColumnLayout:
+        id: 'resources:components/ColumnLayout/ColumnLayout'
+      Banner:
+        id: 'resources:components/Banner/Banner'
+      TourList:
+        id: 'resources:components/TourList/TourList'

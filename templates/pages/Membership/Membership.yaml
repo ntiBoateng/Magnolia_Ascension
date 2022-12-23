@@ -1,0 +1,27 @@
+label: Membership
+form:
+  properties:
+    - name: title
+      label: Title
+      $type: textField
+      i18n: true
+areas:
+  navigation:
+    title: Navigation Area
+    availableComponents:
+      Navigation:
+        id: 'resources:components/Navigation/Navigation'
+      Logo:
+        id: 'resources:components/Logo/Logo'
+  main:
+    title: Membership Main Area
+    availableComponents: 
+      Footer:
+        id: 'resources:components/Card/Card'
+
+  footer:
+    title: Footer Area
+    type: list
+    availableComponents:
+      Footer:
+        id: 'resources:components/Footer/Footer'

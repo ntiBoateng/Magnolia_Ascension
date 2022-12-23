@@ -1,0 +1,3 @@
+class: info.magnolia.virtualuri.mapping.RegexpVirtualUriMapping
+fromUri: ^/_next/(.*) 
+toUri: redirect:{{targetServer}}/_next/$1

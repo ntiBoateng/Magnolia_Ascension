@@ -1,0 +1,7 @@
+!content-type:Tours
+name: tours
+icon: icon-content-app
+label: Tours
+subApps:
+    detail:
+        label: Tours

@@ -1,0 +1,11 @@
+label: ExternalLink
+form:
+  properties:
+    - name: title
+      label: Display Page Name
+      $type: textField
+      i18n: true
+    - name: pageLinks
+      label: External Page Link
+      $type: textField
+      i18n: true

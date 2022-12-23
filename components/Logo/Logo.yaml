@@ -1,0 +1,18 @@
+label: Nav Menu
+form:
+  implementationClass: info.magnolia.ui.javascript.form.FormViewWithChangeListener
+  properties:
+    - name: title
+      label: Title
+      $type: textField
+      i18n: true
+    - name: pageLinks
+      label: Choose corresponding page
+      $type: pageLinkField
+      showOptions: true
+      textInputAllowed: true
+      converterClass: info.magnolia.ui.editor.converter.JcrNodeToPathConverter
+    - name: color
+      label: Text Color
+      $type: javascriptField
+      fieldScript: /resources/webresources/fieldScripts/colorPicker.html

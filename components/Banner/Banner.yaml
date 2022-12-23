@@ -1,0 +1,7 @@
+label: Banner (Gideon Made)
+form:
+  properties:
+    - name: title
+      label: Title
+      $type: textField
+      i18n: true

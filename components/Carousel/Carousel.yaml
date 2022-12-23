@@ -1,0 +1,57 @@
+label: Carousel Component
+form:
+  properties:
+    image1:
+      $type: damLinkField
+      label: Slide One Image
+      required: true
+    image2:
+      $type: damLinkField
+      label: Slide Two Image
+      required: true
+    image3:
+      $type: damLinkField
+      label: Slide Three Image
+      required: true
+    slideLabel:
+      label: Slide Label
+      $type: textField
+    slideDes:
+      label: Slide Description
+      $type: textField
+      rows: 2
+    slideLabel2:
+      label: Slide Label
+      $type: textField
+    slideDes2:
+      label: Slide Description
+      $type: textField
+      rows: 2
+    slideLabel3:
+      label: Slide Label
+      $type: textField
+    slideDes3:
+      label: Slide Description
+      $type: textField
+      rows: 2
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: tabImage1
+        label: Slide One
+        fields:
+          - name: image1
+          - name: slideLabel
+          - name: slideDes
+      - name: tabImage2
+        label: Slide Two
+        fields:
+          - name: image2
+          - name: slideLabel2
+          - name: slideDes2
+      - name: tabImage3
+        label: Slide Three
+        fields:
+          - name: image3
+          - name: slideLabel3
+          - name: slideDes3

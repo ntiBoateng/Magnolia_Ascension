@@ -1,0 +1,7 @@
+!content-type:Contact
+name: contact
+icon: icon-content-app
+label: Contact
+subApps:
+    detail:
+        label: Contact

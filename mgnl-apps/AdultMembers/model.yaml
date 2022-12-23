@@ -1,0 +1,57 @@
+model:
+  nodeType: mgnl:content
+  properties:
+    - name: formNumber
+      label: Form Number
+    - name: firstName
+      label: First Name
+    - name: surname
+      label: Surname
+    - name: dob
+    - name: gender
+      label: Gender
+      options:
+        - name: male
+          value: Male
+          label: Male
+        - name: female
+          value: Female
+          label: Female
+    - name: homeTown
+      label: Home Town
+    - name: region
+      label: Region
+      options:
+        - name: ahafo
+          value: Ahafo
+        - name: ashanti
+          value: Ashanti
+        - name: central
+          value: Central
+        - name: northern
+          value: Northern
+        - name: greaterAccra
+          value: GreaterAccra
+        - name: westernNorth
+          value: WesternNorth
+        - name: upperEast
+          value: UpperEast
+        - name: upperWest
+          value: UpperWest
+        - name: western
+          value: Western
+        - name: volta
+          value: Volta
+        - name: northEast
+          value: NorthEast
+        - name: savannah
+          value: Savannah
+        - name: oti
+          value: Oti
+        - name: eastern
+          value: Eastern
+        - name: bonoEast
+          value: BonoAhafo
+      
+      
+

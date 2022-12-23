@@ -1,0 +1,25 @@
+label: Headline
+form:
+  properties:
+    - name: title
+      label: Title text
+      $type: textField
+      i18n: true
+      mockValue:
+        generator: lorem
+        method: words
+        arguments:
+          - 3
+    - name: description
+      $type: richTextField
+      i18n: true
+      mockValue:
+        generator: lorem
+        method: paragraphs
+        arguments:
+          - 5
+          - <br/>
+    - name: subtitle
+      required: true
+      $type: textField
+      description: Add some few lines of characters here to better help the author to understand what you want to do.

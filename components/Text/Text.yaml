@@ -1,0 +1,8 @@
+label: Text
+form:
+  properties:
+    - name: title
+      label: Short History
+      $type: textField
+      i18n: true
+      rows: 2

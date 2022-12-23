@@ -1,0 +1,81 @@
+{
+	"name": "resources",
+	"version": "0.1.0",
+	"private": true,
+	"root": "./",
+	"magnolia": {
+		"spaEditor": {
+			"type": "spa"
+		},
+		"i18n": {
+			"enabled": true,
+			"fallbackLocale": "en",
+			"locales": {
+				"en": {
+					"country": "",
+					"enabled": true,
+					"language": "en"
+				},
+				"de": {
+					"country": "",
+					"enabled": true,
+					"language": "de"
+				}
+			}
+		},
+		"theme": {
+			"imaging": {
+				"variations": {
+					"large": {
+						"width": 1600
+					},
+					"medium": {
+						"width": 960,
+						"height": 720
+					},
+					"small": {
+						"height": 360,
+						"width": 480
+					}
+				}
+			}
+		}
+	},
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"storybook": "start-storybook -p 6006",
+		"build-storybook": "build-storybook"
+	},
+	"dependencies": {
+		"@magnolia-ea/uxf-core": "^1.0.1",
+		"@magnolia-ea/uxf-react": "^1.0.1",
+		"@magnolia/react-editor": "1.3.0",
+		"axios": "^0.21.1",
+		"bootstrap": "^5.1.3",
+		"next": "^11.1.4",
+		"next-compose-plugins": "^2.2.1",
+		"react": "17.0.2",
+		"react-dom": "17.0.2",
+		"react-social-media-icons": "^10.0.4"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.14.6",
+		"@storybook/addon-actions": "^6.3.4",
+		"@storybook/addon-docs": "^6.3.4",
+		"@storybook/addon-essentials": "^6.3.4",
+		"@storybook/addon-links": "^6.3.4",
+		"@storybook/react": "^6.1.21",
+		"@types/react": "17.0.2",
+		"babel-loader": "^8.2.2",
+		"eslint": "7.29.0",
+		"eslint-config-next": "11.0.1",
+		"next-transpile-modules": "^8.0.0",
+		"typescript": "4.3.4"
+	},
+	"resolutions": {
+		"@types/react": "^17.0.2"
+	}
+}

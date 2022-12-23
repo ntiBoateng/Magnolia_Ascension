@@ -1,0 +1,45 @@
+label: Navigation
+form:
+  implementationClass: info.magnolia.ui.javascript.form.FormViewWithChangeListener
+  properties:
+    - name: color
+      label: Choose Navigation Background-Color
+      $type: javascriptField
+      fieldScript: /resources/webresources/fieldScripts/colorPicker.html
+
+
+areas:
+  logoArea:
+    title: Logo Area
+    type: list
+    availableComponents:
+      logo:
+        id: 'resources:components/LogoImage/LogoImage'
+
+  homeArea:
+    title: Home Area
+    type: list
+    availableComponents:
+      logo:
+        id: 'resources:components/Logo/Logo'
+
+  aboutArea:
+    title: About Us Area
+    type: list
+    availableComponents:
+      logo:
+        id: 'resources:components/Logo/Logo'
+
+  institutionArea:
+    title: Institution Area
+    type: list
+    availableComponents:
+      logo:
+        id: 'resources:components/Logo/Logo'
+
+  contactArea:
+    title: Contact Area
+    type: list
+    availableComponents:
+      logo:
+        id: 'resources:components/Logo/Logo'

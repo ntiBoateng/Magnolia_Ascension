@@ -1,0 +1,76 @@
+label: Text And Image
+form:
+  properties:
+    headlineLevel:
+      $type: comboBoxField
+      defaultValue: small
+      datasource:
+        $type: optionListDatasource
+        options:
+          - name: big
+            value: big
+          - name: medium
+            value: medium
+          - name: small
+            value: small
+      mockValue: medium
+    headline:
+      $type: textField
+      i18n: true
+      mockValue:
+        generator: lorem
+        method: words
+        arguments:
+          - 3
+    text:
+      $type: richTextField
+      i18n: true
+      mockValue:
+        generator: lorem
+        method: paragraphs
+        arguments:
+          - 5
+          - <br/>
+    image:
+      $type: damLinkField
+      mockValue:
+        - value: static alt value
+          target: alt
+        - generator: name
+          method: title
+          target: title
+        - generator: image
+          method: abstract
+          arguments:
+            - 200
+            - 150
+            - true
+          target: renditions.large.link
+        - generator: name
+          method: findName
+          target: title
+          i18n: true
+    imagePosition:
+      $type: comboBoxField
+      defaultValue: below
+      datasource:
+        $type: optionListDatasource
+        options:
+          - name: above
+            value: above
+          - name: below
+            value: below
+      mockValue: above
+
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: tabText
+        fields:
+          - name: headlineLevel
+          - name: headline
+          - name: text
+      - name: tabImage
+        fields:
+          - name: image
+          - name: imagePosition
